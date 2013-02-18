@@ -39,27 +39,27 @@
 			parameter="/WEB-INF/jsp/delete.jsp" />
 		<!-- End Of Forward Actions -->
 		<action path="/createAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentBean" scope="request" parameter="createStudent" input="/create.jsp">
+			name="studentBean" scope="request" parameter="createStudent" input="/WEB-INF/jsp/create.jsp">
 			<forward name="success" path="/WEB-INF/jsp/create.jsp" />
 		</action>
 		<action path="/getAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentIdBean" scope="request" parameter="getStudent" input="/read.jsp">
+			name="studentIdBean" scope="request" parameter="getStudent" input="/WEB-INF/jsp/read.jsp">
 			<forward name="success" path="/WEB-INF/jsp/read.jsp" />
 		</action>
 		<action path="/getUpdateAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentIdBean" scope="request" parameter="getStudent" input="/update.jsp">
+			name="studentIdBean" scope="request" parameter="getStudent" input="/WEB-INF/jsp/update.jsp">
 			<forward name="success" path="/WEB-INF/jsp/update.jsp" />
 		</action>
 		<action path="/updateAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentBean" scope="request" parameter="updateStudent" input="/update.jsp">
+			name="studentBean" scope="request" parameter="updateStudent" input="/WEB-INF/jsp/update.jsp">
 			<forward name="success" path="/WEB-INF/jsp/update.jsp" />
 		</action>
 		<action path="/getDeleteAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentIdBean" scope="request" parameter="getStudent" input="/delete.jsp">
+			name="studentIdBean" scope="request" parameter="getStudent" input="/WEB-INF/jsp/delete.jsp">
 			<forward name="success" path="/WEB-INF/jsp/delete.jsp" />
 		</action>
 		<action path="/deleteAction" type="com.ashok.mvc.action.StudentAction"
-			name="studentIdBean" scope="request" parameter="deleteStudent" input="/delete.jsp">
+			name="studentIdBean" scope="request" parameter="deleteStudent" input="/WEB-INF/jsp/delete.jsp">
 			<forward name="success" path="/WEB-INF/jsp/delete.jsp" />
 		</action>
 		<action path="/deleteSingleStudent" type="com.ashok.mvc.action.StudentAction"
@@ -67,7 +67,7 @@
 			<forward name="success" path="/getAllStudent" />
 		</action>
 		<action path="/getAllStudent" type="com.ashok.mvc.action.StudentAction"
-			scope="request" parameter="showAllStudent" input="/read.jsp">
+			scope="request" parameter="showAllStudent" input="/WEB-INF/jsp/read.jsp">
 			<forward name="success" path="/WEB-INF/jsp/read.jsp" />
 		</action>
 	</action-mappings>
