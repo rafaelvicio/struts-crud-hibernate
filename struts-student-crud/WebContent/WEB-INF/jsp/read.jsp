@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 </head>
 <body>
-	<jsp:include page="WEB-INF/jsp/header.jsp" />
+	<c:import url="/header" />
 	<div class="error" align="center">
 		<h:errors />
 		${nostudent}

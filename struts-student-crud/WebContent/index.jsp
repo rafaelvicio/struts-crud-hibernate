@@ -11,6 +11,6 @@
 <title>Home Page</title>
 </head>
 <body>
-	<jsp:include page="/header" />
+	<c:import url="/header" />
 </body>
 </html>

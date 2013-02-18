@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="h"%>
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="b"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 </head>
 <body>
-	<jsp:include page="WEB-INF/jsp/header.jsp" />
+	<c:import url="/header" />
 	<div class="error" align="center">
 		<h:errors />
 	</div>

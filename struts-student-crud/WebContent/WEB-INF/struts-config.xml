@@ -17,57 +17,58 @@
 	</global-exceptions>
 
 	<global-forwards>
-
+		<forward name="home" path="/Home" />
 	</global-forwards>
 
 	<action-mappings>
 		<!-- Forward Actions -->
-
+		<action path="/" type="org.apache.struts.actions.ForwardAction"
+			parameter="index.jsp" />
 		<action path="/Home" type="org.apache.struts.actions.ForwardAction"
 			parameter="/index.jsp" />
 		<action path="/header" type="org.apache.struts.actions.IncludeAction"
 			parameter="/WEB-INF/jsp/header.jsp" />
 
 		<action path="/create" type="org.apache.struts.actions.ForwardAction"
-			parameter="/create.jsp" />
+			parameter="/WEB-INF/jsp/create.jsp" />
 		<action path="/read" type="org.apache.struts.actions.ForwardAction"
-			parameter="/read.jsp" />
+			parameter="/WEB-INF/jsp/read.jsp" />
 		<action path="/update" type="org.apache.struts.actions.ForwardAction"
-			parameter="/update.jsp" />
+			parameter="/WEB-INF/jsp/update.jsp" />
 		<action path="/delete" type="org.apache.struts.actions.ForwardAction"
-			parameter="/delete.jsp" />
+			parameter="/WEB-INF/jsp/delete.jsp" />
 		<!-- End Of Forward Actions -->
 		<action path="/createAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentBean" scope="request" parameter="createStudent" input="/create.jsp">
-			<forward name="success" path="/create.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/create.jsp" />
 		</action>
 		<action path="/getAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentIdBean" scope="request" parameter="getStudent" input="/read.jsp">
-			<forward name="success" path="/read.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/read.jsp" />
 		</action>
 		<action path="/getUpdateAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentIdBean" scope="request" parameter="getStudent" input="/update.jsp">
-			<forward name="success" path="/update.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/update.jsp" />
 		</action>
 		<action path="/updateAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentBean" scope="request" parameter="updateStudent" input="/update.jsp">
-			<forward name="success" path="/update.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/update.jsp" />
 		</action>
 		<action path="/getDeleteAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentIdBean" scope="request" parameter="getStudent" input="/delete.jsp">
-			<forward name="success" path="/delete.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/delete.jsp" />
 		</action>
 		<action path="/deleteAction" type="com.ashok.mvc.action.StudentAction"
 			name="studentIdBean" scope="request" parameter="deleteStudent" input="/delete.jsp">
-			<forward name="success" path="/delete.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/delete.jsp" />
 		</action>
 		<action path="/deleteSingleStudent" type="com.ashok.mvc.action.StudentAction"
 			name="studentIdBean" scope="request" parameter="deleteSingleStudent">
-			<forward name="success" path="/getAllStudent.do" />
+			<forward name="success" path="/getAllStudent" />
 		</action>
 		<action path="/getAllStudent" type="com.ashok.mvc.action.StudentAction"
 			scope="request" parameter="showAllStudent" input="/read.jsp">
-			<forward name="success" path="/read.jsp" />
+			<forward name="success" path="/WEB-INF/jsp/read.jsp" />
 		</action>
 	</action-mappings>
 
